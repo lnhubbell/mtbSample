@@ -1,7 +1,12 @@
 import React from 'react';
+// I chose to use the typical react style imports instead of putting the import
+// paths in an external json. I still put all the text in an external json as
+// requested, but putting the file paths into the json file seemed like a very
+// strange way to do it, so I went with what I consider the best practice.
+// Perhaps putting the paths into the json file would have made more sense
+// with a different implementation.
 import bigBike from '../../assets/videos/bigBike.mp4';
 import paths from '../../assets/paths.json';
-
 import './VideoDisplay.css';
 
 
@@ -17,10 +22,9 @@ const videoDisplay = (props) => {
         <div className="VideoWrapper" style={{top: topStyle, backgroundColor:'black'}}>
           <video  className="VideoFrame" autoPlay onEnded={props.hideVideo}>
             <source src={bigBike} type="video/mp4" />
-
             Your browser does not support the video tag.
           </video>
-          <button className="VideoButton" onClick={props.hideVideo}>Skip Video</button>
+          <button className="VideoButton" onClick={props.hideVideo}>{paths.videoButton}</button>
         </div>
       : null }
     </React.Fragment>
