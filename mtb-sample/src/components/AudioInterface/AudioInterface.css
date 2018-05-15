@@ -4,50 +4,49 @@
   background-size:100%;
   width: 100%;
   height: 100vh;
+}
+
+.AudioBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
-  left: 0;
-}
-
-.AudioText {
-  margin: 0px;
+  left: 5%;
   background-color: lightgrey;
-  width: 30%;
-  padding: 15px;
   opacity: .9;
-  margin: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px black;
-}
-
-
-.AudioButton {
-  padding: 15px;
-  border: none;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px black;
-  background-color: lightgrey;
-  margin-bottom: 100px;
-  margin-top: 30px;
-  cursor: pointer;
-  opacity: .9;
-}
-
-.AudioTitle {
   border: 1px solid #ccc;
   box-sizing: border-box;
   box-shadow: 1px 1px 1px black;
   color: black;
-  background-color: lightgrey;
-  opacity: .9;
-  width: 100%;
-  padding: 10px 0px;
-  margin-bottom: 50px;
+  width: 30%;
+  padding: 20px;
+  margin-top: 50px;
 }
+
+.AudioTitle {
+
+}
+
+.AudioText {
+  text-align: justify;
+  padding: 0px 15px;
+}
+
+
+.AudioButton {
+  border: none;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  background-color: #509CCB;
+  padding: 15px;
+  margin: 15px;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
 
 .AudioIcon {
   height: 15px;

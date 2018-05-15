@@ -15,15 +15,18 @@ import './AudioInterface.css';
 
 const audioInterface = (props) => (
   <div className="AudioWrapper">
-    <h1 className="AudioTitle">{paths.title}</h1>
-    <p className="AudioText">{paths.text}</p>
-    <button className="AudioButton" onClick={props.playAudio}>{paths.audioButton}
-      <img className="AudioIcon" src={audioIcon} alt="" />
-    </button>
-    <audio ref={props.myRef}>
-      <source src={bikeSound} type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <div className="AudioBox">
+      <h1 className="AudioTitle">{paths.title}</h1>
+      <p className="AudioText">{paths.text}</p>
+      <button className="AudioButton" onClick={props.playAudio}>
+        <strong>{paths.audioButton}</strong>
+        <img className="AudioIcon" src={audioIcon} alt="" />
+      </button>
+      <audio ref={props.myRef}>
+        <source src={bikeSound} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
   </div>
 )
 

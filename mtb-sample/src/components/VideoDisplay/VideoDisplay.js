@@ -20,11 +20,13 @@ const videoDisplay = (props) => {
     <React.Fragment>
       { props.renderVideo ?
         <div className="VideoWrapper" style={{top: topStyle, backgroundColor:'black'}}>
+          {/* I took out the video controls, because they weren't requested and
+          this felt cleaner, but they could easily be added back in */}
           <video  className="VideoFrame" autoPlay onEnded={props.hideVideo}>
             <source src={bigBike} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <button className="VideoButton" onClick={props.hideVideo}>{paths.videoButton}</button>
+          <button className="VideoButton" onClick={props.hideVideo}><strong>{paths.videoButton}</strong></button>
         </div>
       : null }
     </React.Fragment>
