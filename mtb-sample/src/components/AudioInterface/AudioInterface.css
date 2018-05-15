@@ -1,0 +1,43 @@
+.AudioWrapper {
+  background-image: url('../../assets/images/mtb.jpg');
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AudioText {
+  margin: 0px;
+  background-color: lightgrey;
+  width: 30%;
+  padding: 15px;
+  opacity: .9;
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+}
+
+
+.AudioButton {
+  padding: 10px;
+  border: none;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  background-color: lightgrey;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.AudioTitle {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  color: black;
+  background-color: lightgrey;
+  opacity: .7;
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 50px;
+}
