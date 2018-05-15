@@ -1,5 +1,4 @@
 import React from 'react';
-import bigBuck from '../../assets/videos/BigBuckBunny_320x180.mp4';
 import bigBike from '../../assets/videos/bigBike.mp4';
 import paths from '../../assets/paths.json';
 
